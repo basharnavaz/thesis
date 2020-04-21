@@ -1,0 +1,560 @@
+\begin{thebibliography}{71}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alaimo\emph{ et~al.}(2013)Alaimo, A., Artale, V., Milazzo,
+  C.~\&~Ricciardello, A.]{RN84}
+Alaimo, A., Artale, V., Milazzo, C.~\&~Ricciardello, A.
+\newblock (2013).
+\newblock \emph{Comparison between euler and quaternion parametrization in uav
+  dynamics}.
+\newblock Conference Proceedings~\bibpres~ AIP Conference Proceedings~(pp.~
+  1228-1231).
+
+\bibitem[Alexis\emph{ et~al.}(2011)Alexis, K., Papachristos, C.,
+  Nikolakopoulos, G.~\&~Tzes, A.]{alexis2011model}
+Alexis, K., Papachristos, C., Nikolakopoulos, G.~\&~Tzes, A.
+\newblock (2011).
+\newblock Model predictive quadrotor indoor position control.
+\newblock \emph{2011 19th Mediterranean Conference on Control \& Automation
+  (MED)}, pp.~1247--1252.
+
+\bibitem[Alexis\emph{ et~al.}(2012)Alexis, K., Nikolakopoulos, G.~\&~Tzes,
+  A.]{alexis2012model}
+Alexis, K., Nikolakopoulos, G.~\&~Tzes, A.
+\newblock (2012).
+\newblock Model predictive quadrotor control: attitude, altitude and position
+  experimental studies.
+\newblock \emph{IET Control Theory \& Applications}, 6(12), 1812--1827.
+
+\bibitem[Alexis\emph{ et~al.}(2016)Alexis, K., Papachristos, C., Siegwart,
+  R.~\&~Tzes, A.]{RN91}
+Alexis, K., Papachristos, C., Siegwart, R.~\&~Tzes, A.
+\newblock (2016).
+\newblock Robust model predictive flight control of unmanned rotorcrafts.
+\newblock \emph{Journal of Intelligent \& Robotic Systems}, 81(3-4), 443-469.
+
+\bibitem[Argentim\emph{ et~al.}(2013)Argentim, L.~M., Rezende, W.~C., Santos,
+  P.~E.~\&~Aguiar, R.~A.]{RN99}
+Argentim, L.~M., Rezende, W.~C., Santos, P.~E.~\&~Aguiar, R.~A.
+\newblock (2013).
+\newblock \emph{PID, LQR and LQR-PID on a quadcopter platform}.
+\newblock Conference Proceedings~\bibpres~ 2013 International Conference on
+  Informatics, Electronics and Vision (ICIEV)~(pp.~ 1-6).
+
+\bibitem[Barker\emph{ et~al.}(1995)Barker, A.~L., Brown, D.~E.~\&~Martin,
+  W.~N.]{RN67}
+Barker, A.~L., Brown, D.~E.~\&~Martin, W.~N.
+\newblock (1995).
+\newblock Bayesian estimation and the Kalman filter.
+\newblock \emph{Computers \& Mathematics with Applications}, 30(10), 55-77.
+\newblock doi:~\detokenize{https://doi.org/10.1016/0898-1221(95)00156-S}.
+
+\bibitem[Bemporad\emph{ et~al.}(2009)Bemporad, A., Pascucci, C.~A.~\&~Rocchi,
+  C.]{RN104}
+Bemporad, A., Pascucci, C.~A.~\&~Rocchi, C.
+\newblock (2009).
+\newblock Hierarchical and hybrid model predictive control of quadcopter air
+  vehicles.
+\newblock \emph{IFAC Proceedings Volumes}, 42(17), 14-19.
+
+\bibitem[Benallegue\emph{ et~al.}(2008)Benallegue, A., Mokhtari, A.~\&~Fridman,
+  L.]{RN110}
+Benallegue, A., Mokhtari, A.~\&~Fridman, L.
+\newblock (2008).
+\newblock High‐order sliding‐mode observer for a quadrotor UAV.
+\newblock \emph{International Journal of Robust and Nonlinear Control:
+  IFAC‐Affiliated Journal}, 18(4‐5), 427-440.
+
+\bibitem[Besnard\emph{ et~al.}(2012)Besnard, L., Shtessel, Y.~B.~\&~Landrum,
+  B.]{RN111}
+Besnard, L., Shtessel, Y.~B.~\&~Landrum, B.
+\newblock (2012).
+\newblock Quadrotor vehicle control via sliding mode controller driven by
+  sliding mode disturbance observer.
+\newblock \emph{Journal of the Franklin Institute}, 349(2), 658-684.
+
+\bibitem[Bishop(1996)Bishop, R.~H.]{bishop1996modern}
+Bishop, R.~H.
+\newblock (1996).
+\newblock \emph{Modern control systems analysis and design using MATLAB and
+  SIMULINK}.
+\newblock  Addison-Wesley Longman Publishing Co., Inc.
+
+\bibitem[Bouabdallah(2007)Bouabdallah, S.]{RN89}
+Bouabdallah, S.
+\newblock (2007).
+\newblock \emph{Design and control of quadrotors with application to autonomous
+  flying}.
+
+\bibitem[Bouabdallah~\&~Siegwart(2005)Bouabdallah, S.~\&~Siegwart, R.]{RN103}
+Bouabdallah, S.~\&~Siegwart, R.
+\newblock (2005).
+\newblock \emph{Backstepping and sliding-mode techniques applied to an indoor
+  micro quadrotor}.
+\newblock Conference Proceedings~\bibpres~ Proceedings of the 2005 IEEE
+  international conference on robotics and automation~(pp.~ 2247-2252).
+
+\bibitem[Bouabdallah~\&~Siegwart(2007)Bouabdallah, S.~\&~Siegwart, R.]{RN109}
+Bouabdallah, S.~\&~Siegwart, R.
+\newblock (2007).
+\newblock \emph{Full control of a quadrotor}.
+\newblock Conference Proceedings~\bibpres~ 2007 IEEE/RSJ International
+  Conference on Intelligent Robots and Systems~(pp.~ 153-158).
+
+\bibitem[Bouffard\emph{ et~al.}(2012)Bouffard, P., Aswani, A.~\&~Tomlin,
+  C.]{RN94}
+Bouffard, P., Aswani, A.~\&~Tomlin, C.
+\newblock (2012).
+\newblock \emph{Learning-based model predictive control on a quadrotor: Onboard
+  implementation and experimental results}.
+\newblock Conference Proceedings~\bibpres~ 2012 IEEE International Conference
+  on Robotics and Automation~(pp.~ 279-284).
+
+\bibitem[Cao~\&~Lynch(2015)Cao, N.~\&~Lynch, A.~F.]{RN93}
+Cao, N.~\&~Lynch, A.~F.
+\newblock (2015).
+\newblock Inner–outer loop control for quadrotor UAVs with input and state
+  constraints.
+\newblock \emph{IEEE Transactions on Control Systems Technology}, 24(5),
+  1797-1804.
+
+\bibitem[Choi~\&~Ahn(2014)Choi, Y.-C.~\&~Ahn, H.-S.]{RN92}
+Choi, Y.-C.~\&~Ahn, H.-S.
+\newblock (2014).
+\newblock Nonlinear control of quadrotor for point tracking: Actual
+  implementation and experimental tests.
+\newblock \emph{IEEE/ASME transactions on mechatronics}, 20(3), 1179-1192.
+
+\bibitem[Dunbar(2001)Dunbar, W.~B.]{RN106}
+Dunbar, W.~B.
+\newblock (2001).
+\newblock Model predictive control: extension to coordinated multi-vehicle
+  formations and real-time implementation.
+\newblock \emph{Control and Dynamical Systems, California Institute of
+  Technology, PhD Candi dacy Report CDS TR}, 1-16.
+
+\bibitem[Dunbar~\&~Murray(2002)Dunbar, W.~B.~\&~Murray, R.~M.]{RN105}
+Dunbar, W.~B.~\&~Murray, R.~M.
+\newblock (2002).
+\newblock \emph{Model predictive control of coordinated multi-vehicle
+  formations}.
+\newblock Conference Proceedings~\bibpres~ Proceedings of the 41st IEEE
+  Conference on Decision and Control, 2002.~(pp.~ 4631-4636).
+
+\bibitem[Faessler\emph{ et~al.}(2017)Faessler, M., Franchi, A.~\&~Scaramuzza,
+  D.]{faessler2017differential}
+Faessler, M., Franchi, A.~\&~Scaramuzza, D.
+\newblock (2017).
+\newblock Differential flatness of quadrotor dynamics subject to rotor drag for
+  accurate tracking of high-speed trajectories.
+\newblock \emph{IEEE Robotics and Automation Letters}, 3(2), 620--626.
+
+\bibitem[Fathella(2019)Fathella, N.]{nuradeen2019thesis}
+Fathella, N.
+\newblock (2019).
+\newblock \emph{Modelling, identification, and control of a quadrotor
+  helicopter}.
+\newblock (\bibphd,~Ecole de technologie superieure ETS,~Montreal).
+\newblock \biburlrep~Note.
+
+\bibitem[Fethalla\emph{ et~al.}(2017{\natexlab{a}})Fethalla, N., Saad, M.,
+  Michalska, H.~\&~Ghommam, J.]{RN114}
+Fethalla, N., Saad, M., Michalska, H.~\&~Ghommam, J.
+\newblock (2017{\natexlab{a}}).
+\newblock \emph{Robust observer-based backstepping controller for a quadrotor
+  UAV}.
+\newblock Conference Proceedings~\bibpres~ 2017 IEEE 30th Canadian Conference
+  on Electrical and Computer Engineering (CCECE)~(pp.~ 1-4).
+
+\bibitem[Fethalla\emph{ et~al.}(2017{\natexlab{b}})Fethalla, N., Saad, M.,
+  Michalska, H.~\&~Ghommam, J.]{RN116}
+Fethalla, N., Saad, M., Michalska, H.~\&~Ghommam, J.
+\newblock (2017{\natexlab{b}}).
+\newblock \emph{Robust tracking control for a quadrotor UAV}.
+\newblock Conference Proceedings~\bibpres~ 2017 25th Mediterranean Conference
+  on Control and Automation (MED)~(pp.~ 1269-1274).
+
+\bibitem[Fethalla\emph{ et~al.}(2018)Fethalla, N., Saad, M., Michalska,
+  H.~\&~Ghommam, J.]{RN117}
+Fethalla, N., Saad, M., Michalska, H.~\&~Ghommam, J.
+\newblock (2018).
+\newblock Robust observer-based dynamic sliding mode controller for a quadrotor
+  UAV.
+\newblock \emph{IEEE Access}, 6, 45846-45859.
+
+\bibitem[Fethalla\emph{ et~al.}(2019)Fethalla, N., Khan, B., Maarouf,
+  S.~\&~Michalska, H.]{bash2019analysis}
+Fethalla, N., Khan, B., Maarouf, S.~\&~Michalska, H.
+\newblock (2019).
+\newblock Analysis, Verification and Comparison of various Robust Control
+  Methods for Dynamic Control of Quadrotore UAV.
+\newblock \bibin~\emph{Analysis and Control of Nonlinear Systems A
+  Flatness-based Approach} (ch.~5,~pp.~121-173).
+\newblock  Ecole Techonologie Superieur.
+\newblock doi:~\detokenize{10.1007/978-3-642-00839-9_6}.
+
+\bibitem[Fleming(1997)Fleming, W.~H.]{fleming1997deterministic}
+Fleming, W.~H.
+\newblock (1997).
+\newblock Deterministic nonlinear filtering.
+\newblock \emph{Annali della Scuola Normale Superiore di Pisa-Classe di
+  Scienze}, 25(3-4), 435--454.
+
+\bibitem[Fliess~\&~Sira-Ram{\'\i}rez(2003)Fliess, M.~\&~Sira-Ram{\'\i}rez,
+  H.]{fliess2003algebraic}
+Fliess, M.~\&~Sira-Ram{\'\i}rez, H.
+\newblock (2003).
+\newblock An algebraic framework for linear identification.
+\newblock \emph{ESAIM: Control, Optimisation and Calculus of Variations}, 9,
+  151--168.
+
+\bibitem[Fliess\emph{ et~al.}(1992)Fliess, M., Lévine, J., Martin,
+  P.~\&~Rouchon, P.]{RN78}
+Fliess, M., Lévine, J., Martin, P.~\&~Rouchon, P.
+\newblock (1992).
+\newblock Sur lessystèmesnon linéaires différentiellement plats.
+\newblock \emph{CR Acad. Sci. Paris}, 619.
+
+\bibitem[Fliess\emph{ et~al.}(1995)Fliess, M., Lévine, J., Martin,
+  P.~\&~Rouchon, P.]{RN79}
+Fliess, M., Lévine, J., Martin, P.~\&~Rouchon, P.
+\newblock (1995).
+\newblock Flatness and defect of non-linear systems: introductory theory and
+  examples.
+\newblock \emph{International journal of control}, 61(6), 1327-1361.
+
+\bibitem[Fliess\emph{ et~al.}(1999)Fliess, M., Lévine, J., Martin,
+  P.~\&~Rouchon, P.]{RN80}
+Fliess, M., Lévine, J., Martin, P.~\&~Rouchon, P.
+\newblock (1999).
+\newblock A lie-backlund approach to equivalence and flatness of nonlinear
+  systems.
+\newblock \emph{IEEE Transactions on automatic control}, 44(5), 922-937.
+
+\bibitem[Fliess\emph{ et~al.}(2003)Fliess, M., Mboup, M., Mounier,
+  H.~\&~Sira-Ramirez, H.]{RN82}
+Fliess, M., Mboup, M., Mounier, H.~\&~Sira-Ramirez, H.
+\newblock (2003).
+\newblock \emph{Questioning some paradigms of signal processing via concrete
+  examples}.
+
+\bibitem[Ghoshal~\&~Michalska(2019)Ghoshal, D.~P.~\&~Michalska,
+  H.]{ghoshal2019finite}
+Ghoshal, D.~P.~\&~Michalska, H.
+\newblock (2019).
+\newblock Finite-interval kernel-based identification and state estimation for
+  LTI systems with noisy output data* This work was supported by The National
+  Science \& Engineering Research Council of Canada.
+\newblock \emph{2019 American Control Conference (ACC)}, pp.~4982--4989.
+
+\bibitem[Ghoshal\emph{ et~al.}(2017{\natexlab{a}})Ghoshal, D.~P.,
+  Gopalakrishnan, K.~\&~Michalska, H.]{RN76}
+Ghoshal, D.~P., Gopalakrishnan, K.~\&~Michalska, H.
+\newblock (2017{\natexlab{a}}).
+\newblock Algebraic parameter estimation using kernel representation of linear
+  systems.
+\newblock \emph{IFAC-PapersOnLine}, 50(1), 12898-12904.
+
+\bibitem[Ghoshal\emph{ et~al.}(2017{\natexlab{b}})Ghoshal, D.~P.,
+  Gopalakrishnan, K.~\&~Michalska, H.]{ghoshal2017using}
+Ghoshal, D.~P., Gopalakrishnan, K.~\&~Michalska, H.
+\newblock (2017{\natexlab{b}}).
+\newblock Using invariance to extract signal from noise.
+\newblock \emph{2017 American Control Conference (ACC)}, pp.~2588--2593.
+
+\bibitem[Ghoshal\emph{ et~al.}(2019)Ghoshal, D.~P., Sinha, S.~\&~Michalska,
+  H.]{RN83}
+Ghoshal, D.~P., Sinha, S.~\&~Michalska, H.
+\newblock (2019).
+\newblock Algebraic Nonlinear Identification and Output Tracking Control of
+  Synchronous Generator using Differential Flatness.
+\newblock \emph{2019 23rd International Conference on System Theory, Control
+  and Computing (ICSTCC)}, pp.~206--211.
+
+\bibitem[Gopalakrishnan(2017)Gopalakrishnan, K.]{RN119}
+Gopalakrishnan, K.
+\newblock (2017).
+\newblock \emph{A new method of non-asymptotic estimation for linear systems}.
+\newblock (Thesis).
+\newblock
+  \biburlrep~\url{http://digitool.Library.McGill.CA/R/?func=dbin-jump-full&object_id=146999}.
+
+\bibitem[Guo~\&~Huang(2013)Guo, Y.~\&~Huang, B.]{RN69}
+Guo, Y.~\&~Huang, B.
+\newblock (2013).
+\newblock Moving horizon estimation for switching nonlinear systems.
+\newblock \emph{Automatica}, 49(11), 3270-3281.
+\newblock doi:~\detokenize{https://doi.org/10.1016/j.automatica.2013.08.028}.
+
+\bibitem[Harris~\&~Piersol(2002)Harris, C.~M.~\&~Piersol,
+  A.~G.]{harris2002harris}
+Harris, C.~M.~\&~Piersol, A.~G.
+\newblock (2002).
+\newblock \emph{Harris' shock and vibration handbook}.
+\newblock  McGraw-Hill New York.
+
+\bibitem[Hernandez(2017)Hernandez, B.]{brice2017thesis}
+Hernandez, B.
+\newblock (2017).
+\newblock \emph{Commande par linéarisation entrée-sortie d'un drone de type
+  quadcopter à l'aide de la Kinect One}.
+\newblock (\bibmaster,~Ecole de technologie superieure ETS,~Montreal).
+\newblock \biburlrep~blank.
+
+\bibitem[Hoffmann\emph{ et~al.}(2007)Hoffmann, G., Huang, H., Waslander,
+  S.~\&~Tomlin, C.]{hoffmann2007quadrotor}
+Hoffmann, G., Huang, H., Waslander, S.~\&~Tomlin, C.
+\newblock (2007).
+\newblock Quadrotor helicopter flight dynamics and control: Theory and
+  experiment.
+\newblock \emph{AIAA guidance, navigation and control conference and exhibit},
+  pp.~6461.
+
+\bibitem[Iskandarani\emph{ et~al.}(2013)Iskandarani, M., Givigi, S.~N.,
+  Rabbath, C.~A.~\&~Beaulieu, A.]{RN95}
+Iskandarani, M., Givigi, S.~N., Rabbath, C.~A.~\&~Beaulieu, A.
+\newblock (2013).
+\newblock \emph{Linear model predictive control for the encirclement of a
+  target using a quadrotor aircraft}.
+\newblock Conference Proceedings~\bibpres~ 21st Mediterranean Conference on
+  Control and Automation~(pp.~ 1550-1556).
+
+\bibitem[Krener(2015)Krener, A.~J.]{krener2015minimum}
+Krener, A.~J.
+\newblock (2015).
+\newblock Minimum energy estimation and moving horizon estimation.
+\newblock \emph{2015 54th IEEE Conference on Decision and Control (CDC)},
+  pp.~4952--4957.
+
+\bibitem[Lee\emph{ et~al.}(2009)Lee, D., Kim, H.~J.~\&~Sastry, S.]{RN90}
+Lee, D., Kim, H.~J.~\&~Sastry, S.
+\newblock (2009).
+\newblock Feedback linearization vs. adaptive sliding mode control for a
+  quadrotor helicopter.
+\newblock \emph{International Journal of control, Automation and systems},
+  7(3), 419-428.
+
+\bibitem[Levant(1998)Levant, A.]{levant1998robust}
+Levant, A.
+\newblock (1998).
+\newblock Robust exact differentiation via sliding mode technique.
+\newblock \emph{automatica}, 34(3), 379--384.
+
+\bibitem[L{\'e}vine(2009)L{\'e}vine, J.]{levine2009differential}
+L{\'e}vine, J.
+\newblock (2009).
+\newblock Differentially Flat Systems.
+\newblock \bibin~\emph{Analysis and Control of Nonlinear Systems A
+  Flatness-based Approach} (pp.~131-179).
+\newblock  Tokyo: Springer Berlin Heidelberg.
+\newblock doi:~\detokenize{10.1007/978-3-642-00839-9_6}.
+
+\bibitem[Mahony\emph{ et~al.}(2012)Mahony, R., Kumar, V.~\&~Corke, P.]{RN113}
+Mahony, R., Kumar, V.~\&~Corke, P.
+\newblock (2012).
+\newblock Multirotor aerial vehicles: Modeling, estimation, and control of
+  quadrotor.
+\newblock \emph{IEEE robotics \& automation magazine}, 19(3), 20-32.
+
+\bibitem[Mellinger~\&~Kumar(2011)Mellinger, D.~\&~Kumar,
+  V.]{mellinger2011minimum}
+Mellinger, D.~\&~Kumar, V.
+\newblock (2011).
+\newblock Minimum snap trajectory generation and control for quadrotors.
+\newblock \emph{2011 IEEE International Conference on Robotics and Automation},
+  pp.~2520--2525.
+
+\bibitem[Michael\emph{ et~al.}(2010)Michael, N., Mellinger, D., Lindsey,
+  Q.~\&~Kumar, V.]{RN85}
+Michael, N., Mellinger, D., Lindsey, Q.~\&~Kumar, V.
+\newblock (2010).
+\newblock The grasp multiple micro-uav testbed.
+\newblock \emph{IEEE Robotics \& Automation Magazine}, 17(3), 56-65.
+
+\bibitem[Mokhtari\emph{ et~al.}(2006)Mokhtari, A., M'Sirdi, N.~K., Meghriche,
+  K.~\&~Belaidi, A.]{RN112}
+Mokhtari, A., M'Sirdi, N.~K., Meghriche, K.~\&~Belaidi, A.
+\newblock (2006).
+\newblock Feedback linearization and linear observer for a quadrotor unmanned
+  aerial vehicle.
+\newblock \emph{Advanced Robotics}, 20(1), 71-91.
+
+\bibitem[Murray\emph{ et~al.}(1995)Murray, R.~M., Rathinam, M.~\&~Sluis,
+  W.]{RN73}
+Murray, R.~M., Rathinam, M.~\&~Sluis, W.
+\newblock (1995).
+\newblock \emph{Differential flatness of mechanical control systems: A catalog
+  of prototype systems}.
+\newblock Conference Proceedings~\bibpres~ ASME international mechanical
+  engineering congress and exposition.
+
+\bibitem[Musa(2018)Musa, S.]{RN88}
+Musa, S.
+\newblock (2018).
+\newblock Techniques for Quadcopter modeling and Design: A Review.
+\newblock \emph{Journal of Unmanned System Technology}, 5(3), 66-75.
+
+\bibitem[Nemati~\&~Kumar(2014)Nemati, A.~\&~Kumar, M.]{RN87}
+Nemati, A.~\&~Kumar, M.
+\newblock (2014).
+\newblock \emph{Modeling and control of a single axis tilting quadcopter}.
+\newblock Conference Proceedings~\bibpres~ 2014 American Control
+  Conference~(pp.~ 3077-3082).
+
+\bibitem[Nonami\emph{ et~al.}(2010)Nonami, K., Kendoul, F., Suzuki, S., Wang,
+  W.~\&~Nakazawa, D.]{RN71}
+Nonami, K., Kendoul, F., Suzuki, S., Wang, W.~\&~Nakazawa, D.
+\newblock (2010).
+\newblock Autonomous Control of a Mini Quadrotor Vehicle Using LQG Controllers.
+\newblock \bibin~\emph{Autonomous Flying Robots: Unmanned Aerial Vehicles and
+  Micro Aerial Vehicles} (pp.~61-76).
+\newblock  Tokyo: Springer Japan.
+\newblock doi:~\detokenize{10.1007/978-4-431-53856-1_3}.
+
+\bibitem[Oliphant(2006)Oliphant, T.~E.]{oliphant2006guide}
+Oliphant, T.~E.
+\newblock (2006).
+\newblock \emph{A guide to NumPy}.
+\newblock  Trelgol Publishing USA.
+
+\bibitem[Ononiwu\emph{ et~al.}(2016)Ononiwu, G., Onojo, O., Ozioko,
+  O.~\&~Nosiri, O.]{RN98}
+Ononiwu, G., Onojo, O., Ozioko, O.~\&~Nosiri, O.
+\newblock (2016).
+\newblock Quadcopter Design for Payload Delivery.
+\newblock \emph{Journal of Computer and Communications}, 4(10), 1-12.
+
+\bibitem[Pandey\emph{ et~al.}(2018)Pandey, A., Ghoshal, D.~P.~\&~Michalska,
+  H.]{pandey2018variational}
+Pandey, A., Ghoshal, D.~P.~\&~Michalska, H.
+\newblock (2018).
+\newblock Variational Approach to Joint Linear Model and State Estimation.
+\newblock \emph{2018 Annual American Control Conference (ACC)}, pp.~3520--3525.
+
+\bibitem[Pyrkin\emph{ et~al.}(2014)Pyrkin, A.~A., Bobtsov, A.~A., Kolyubin,
+  S.~A., Borisov, O.~I., Gromov, V.~S.~\&~Aranovskiy, S.~V.]{RN97}
+Pyrkin, A.~A., Bobtsov, A.~A., Kolyubin, S.~A., Borisov, O.~I., Gromov,
+  V.~S.~\&~Aranovskiy, S.~V.
+\newblock (2014).
+\newblock \emph{Output controller for quadcopters with wind disturbance
+  cancellation}.
+\newblock Conference Proceedings~\bibpres~ 2014 IEEE Conference on Control
+  Applications (CCA)~(pp.~ 166-170).
+
+\bibitem[Raffo\emph{ et~al.}(2008)Raffo, G.~V., Ortega, M.~G.~\&~Rubio,
+  F.~R.]{RN108}
+Raffo, G.~V., Ortega, M.~G.~\&~Rubio, F.~R.
+\newblock (2008).
+\newblock MPC with Nonlinear H$_infty$ Control for Path Tracking of a
+  Quad-Rotor Helicopter.
+\newblock \emph{IFAC Proceedings Volumes}, 41(2), 8564-8569.
+
+\bibitem[Rao\emph{ et~al.}(2001)Rao, C.~V., Rawlings, J.~B.~\&~Lee,
+  J.~H.]{RN68}
+Rao, C.~V., Rawlings, J.~B.~\&~Lee, J.~H.
+\newblock (2001).
+\newblock Constrained linear state estimation—a moving horizon approach.
+\newblock \emph{Automatica}, 37(10), 1619-1628.
+\newblock doi:~\detokenize{https://doi.org/10.1016/S0005-1098(01)00115-7}.
+
+\bibitem[Ravichandran(2018)Ravichandran, P.]{RN118}
+Ravichandran, P.
+\newblock (2018).
+\newblock \emph{Dynamic regression in tracking of chaotic system trajectories}.
+\newblock (Thesis).
+\newblock
+  \biburlrep~\url{http://digitool.Library.McGill.CA/R/?func=dbin-jump-full&object_id=161212}.
+
+\bibitem[S{\"a}rkk{\"a}(2013)S{\"a}rkk{\"a}, S.]{sarkka2013bayesian}
+S{\"a}rkk{\"a}, S.
+\newblock (2013).
+\newblock \emph{Bayesian filtering and smoothing}.
+\newblock  Cambridge University Press.
+
+\bibitem[Sinha(2018)Sinha, S.]{RN120}
+Sinha, S.
+\newblock (2018).
+\newblock \emph{Simultaneous identification and tracking of a synchronous
+  generator}.
+\newblock (\bibmaster,~McGill University Libraries,~Montreal).
+\newblock \biburlrep~blank.
+
+\bibitem[Sira-Ramirez~\&~Agrawal(2004)Sira-Ramirez, H.~\&~Agrawal, S.~K.]{RN77}
+Sira-Ramirez, H.~\&~Agrawal, S.~K.
+\newblock (2004).
+\newblock \emph{Differentially flat systems}.
+\newblock  Crc Press.
+
+\bibitem[Sira-Ramírez(2011)Sira-Ramírez, H.]{RN81}
+Sira-Ramírez, H.
+\newblock (2011).
+\newblock \emph{On the linear control of the quad-rotor system}.
+\newblock Conference Proceedings~\bibpres~ Proceedings of the 2011 American
+  Control Conference~(pp.~ 3178-3183).
+
+\bibitem[Sira-Ramírez\emph{ et~al.}(2014)Sira-Ramírez, H., Rodríguez, C.~G.,
+  Romero, J.~C.~\&~Juárez, A.~L.]{RN75}
+Sira-Ramírez, H., Rodríguez, C.~G., Romero, J.~C.~\&~Juárez, A.~L.
+\newblock (2014).
+\newblock \emph{Algebraic identification and estimation methods in feedback
+  control systems}.
+\newblock  John Wiley \& Sons.
+
+\bibitem[Soumelidis\emph{ et~al.}(2008)Soumelidis, A., Gáspár, P., Regula,
+  G.~\&~Lantos, B.]{RN100}
+Soumelidis, A., Gáspár, P., Regula, G.~\&~Lantos, B.
+\newblock (2008).
+\newblock \emph{Control of an experimental mini quad-rotor UAV}.
+\newblock Conference Proceedings~\bibpres~ 2008 16th Mediterranean Conference
+  on Control and Automation~(pp.~ 1252-1257).
+
+\bibitem[Sridhar\emph{ et~al.}(2017)Sridhar, S., Kumar, R., Radmanesh,
+  M.~\&~Kumar, M.]{RN101}
+Sridhar, S., Kumar, R., Radmanesh, M.~\&~Kumar, M.
+\newblock (2017).
+\newblock \emph{Non-linear sliding mode control of a tilting-rotor quadcopter}.
+\newblock Conference Proceedings~\bibpres~ ASME 2017 Dynamic Systems and
+  Control Conference.
+
+\bibitem[Sumantri\emph{ et~al.}(2016)Sumantri, B., Uchiyama, N.~\&~Sano,
+  S.]{RN102}
+Sumantri, B., Uchiyama, N.~\&~Sano, S.
+\newblock (2016).
+\newblock Least square based sliding mode control for a quad-rotor helicopter
+  and energy saving by chattering reduction.
+\newblock \emph{Mechanical Systems and Signal Processing}, 66, 769-784.
+
+\bibitem[Teschl(2012)Teschl, G.]{teschl2012ordinary}
+Teschl, G.
+\newblock (2012).
+\newblock \emph{Ordinary differential equations and dynamical systems}.
+\newblock  American Mathematical Soc.
+
+\bibitem[Wang\emph{ et~al.}(2016{\natexlab{a}})Wang, P., Man, Z., Cao, Z.,
+  Zheng, J.~\&~Zhao, Y.]{RN86}
+Wang, P., Man, Z., Cao, Z., Zheng, J.~\&~Zhao, Y.
+\newblock (2016{\natexlab{a}}).
+\newblock \emph{Dynamics modelling and linear control of quadcopter}.
+\newblock Conference Proceedings~\bibpres~ 2016 International Conference on
+  Advanced Mechatronic Systems (ICAMechS)~(pp.~ 498-503).
+
+\bibitem[Wang\emph{ et~al.}(2016{\natexlab{b}})Wang, P., Man, Z., Cao, Z.,
+  Zheng, J.~\&~Zhao, Y.]{wang2016dynamics}
+Wang, P., Man, Z., Cao, Z., Zheng, J.~\&~Zhao, Y.
+\newblock (2016{\natexlab{b}}).
+\newblock Dynamics modelling and linear control of quadcopter.
+\newblock \emph{2016 International Conference on Advanced Mechatronic Systems
+  (ICAMechS)}, pp.~498--503.
+
+\bibitem[Zheng\emph{ et~al.}(2014)Zheng, E.-H., Xiong, J.-J.~\&~Luo,
+  J.-L.]{zheng2014second}
+Zheng, E.-H., Xiong, J.-J.~\&~Luo, J.-L.
+\newblock (2014).
+\newblock Second order sliding mode control for a quadrotor UAV.
+\newblock \emph{ISA transactions}, 53(4), 1350--1356.
+
+\end{thebibliography}

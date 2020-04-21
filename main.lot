@@ -1,0 +1,14 @@
+\babel@toc {english}{}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Inertia moments of quadcopter S500 using experimental method\relax }}{22}{table.caption.54}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Chaotic System 1 \relax }}{55}{table.caption.158}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Chaotic System 2 \relax }}{64}{table.caption.188}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Linear Disturbances \relax }}{66}{table.caption.195}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Constant Disturbances \relax }}{67}{table.caption.198}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Time reductions using vectorization in different programming environments\relax }}{76}{table.caption.206}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Observer gains for NDO\relax }}{81}{table.caption.222}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Controller gains for NDO\relax }}{81}{table.caption.223}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Observer gains for STO\relax }}{85}{table.caption.231}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Controller gains for STO\relax }}{85}{table.caption.232}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Controller gains for KDO\relax }}{89}{table.caption.240}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Root Mean Square (RMS) error in each component of reference trajectory tracking by the three observers without external disturbances\relax }}{105}{table.caption.270}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Root Mean Square (RMS) error in each component of reference trajectory tracking by the three observers under external disturbances\relax }}{106}{table.caption.271}%

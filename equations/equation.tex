@@ -1,0 +1,132 @@
+\documentclass[16pt]{article}
+\linespread{1.75}
+\usepackage{graphicx}
+\usepackage{amsmath, amsthm, amsfonts, amssymb, amscd, siunitx}
+\usepackage{setspace, fancyhdr, float, xfrac, longtable, cite}
+\usepackage{wrapfig, lscape, rotating, epstopdf, url}
+\usepackage{array, booktabs, listings, latexsym}
+\usepackage{tikz, standalone, calc}
+\usetikzlibrary{shapes,arrows, decorations.markings}
+\usepackage{placeins, multirow}
+\usepackage[linesnumbered,plain,vlined]{algorithm2e}
+%\usepackage{parskip}
+\usepackage{framed, pbox, makecell, caption}
+\usepackage[margin=1.6in]{geometry}
+
+
+\begin{document}
+\begin{tabular}{c}
+\textbf{Algorithm 3.1} Kernel Disturbance Observer using dynamic regression for parameter estimation  \vspace{0.1 in}
+\\
+\setlength\fboxsep{0.4cm}
+\fbox{
+\parbox[c][][t]{\textwidth}{ 
+\begin{algorithm} [H] %add [H] for Here
+\SetAlgoLined
+\KwIn{$\mathbf{p_M}=[p_M(t_k-\delta) : p_{M}(t_k-\delta)]$, $\Theta_\mathbf{M}=[\Theta_M(t_k-\delta) : \Theta_M(t_k)]$}
+\KwOut{$\hat{d_p}(t_k)$, $\hat{d_\Theta}(t_k)$}
+%\KwResult{Write here the result }
+Set $\mathbf{w}_{1}^{0}= [1, 1, 1, 1]$, $k=1$ \\
+Obtain Full State Estimate \\
+\For{$\zeta\in[x,y,z,\phi,\theta,\psi]$}{
+\textbf{Parameter Estimate for Local Surrogate Model:} Compute $\hat{\mathbf{w}}_{\zeta_k}$ 
+	\[
+		\hat{\mathbf{w}}_{\zeta_k}=\underset{\mathbf{w}_{\zeta_k}}{\text{argmin}} 	\big\{\gamma||\mathbf{w}_{\zeta_k}-\mathbf{\hat{w}}_{\zeta_{k-1}}||^{2}_{2} + \lambda||\mathbf{w}_{\zeta_k}||^{2}_{2} + ||\mathbf{\zeta}_M-\mathbf{\zeta}_{est}||^{2}_{2}\big\}
+	\]\\
+
+\textbf{State Estimation:} Compute state estimate $\hat{\zeta}(t_k)$ 
+	\[
+		\hat{\zeta}(t_k) = \frac{1}{((t_k)-(t_k-\delta))^4}\int_{t_k-\delta}^{t_k} K_{DS}(t_k,\tau)\zeta_M(\tau)\mathrm{d}\tau
+	\]
+
+\textbf{Higher Order Derivatives:} Compute the higher order derivatives $\hat{\dot{\zeta}}(t_k)$ and $\hat{\ddot{\zeta}}(t_k)$ using equations mentioned in Appendix. 
+}
+Compute External Disturbances $\hat{d_p}(t_k)=[\hat{d_x},\hat{d_y},\hat{d_z}]$ and $\hat{d_\Theta}(t_k)=[\hat{d_\phi},\hat{d_\theta},\hat{d_\psi}]$: 
+	\[
+		\begin{aligned}
+    \hat{d_\phi}&=\hat{\ddot{\phi}}-(r_1\hat{\dot{\theta}}\hat{\dot{\psi}}-r_2\hat{\dot{\theta}}w+q_1U_2); &\hat{d_x}=\hat{\ddot{x}}-\Big((C_{\hat{\phi}}S_{\hat{\theta}}C_{\hat{\psi}}+S_{\hat{\phi}}S_{\hat{\psi}})\frac{1}{m}U_1\Big)\\
+    \hat{d_\theta}&=\hat{\ddot{\theta}}-(r_3\hat{\dot{\phi}}\hat{\dot{\psi}}+r_4\hat{\dot{\phi}}w+q_2U_3);  &\hat{d_y}=\hat{\ddot{y}}-\Big((C_{\hat{\phi}}S_{\hat{\theta}}S_{\hat{\psi}}-S_{\hat{\phi}}C_{\hat{\psi}})\frac{1}{m}U_1\Big)\\
+    \hat{d_\psi}&=\hat{\ddot{\psi}}-(r_5\hat{\dot{\theta}}\hat{\dot{\phi}}+q_3U_4); &\hat{d_z}=\hat{\ddot{z}}-\Big(-g+(C_{\hat{\phi}}C_{\hat{\theta}})\frac{1}{m}U_1\Big)
+    \end{aligned}
+	\]
+
+Set $k \gets k+1$ and go to Step 2.
+%\caption{Kernel Disturbance Observer algorithm using dynamic regression for parameter estimation \label{algo:1}}
+\end{algorithm} 
+} }
+\end{tabular}
+
+\begin{equation}
+d_i = k.a_i(t)sin(\omega t-\phi_i)
+\label{eq:dist_1}
+\end{equation}
+ 
+\begin{subequations}
+\begin{align}
+a'_1(t) &= 0.15\big(\sigma(a_2-a_1)\big)\\
+a'_2(t) &= 0.15\big(\rho a_1 - a_1 a_3 - a_2\big)\\
+a'_3(t) &= 0.15\big(a_1 a_2 - \beta a_3\big)
+\end{align}
+\end{subequations}
+
+
+\begin{equation}
+	\hat{\zeta}(t_k) \cong \int_a^b K_{DS}(t_k,\tau) \zeta_M(\tau)d\tau
+	\quad \forall\quad t_k \in [a,b]
+\end{equation}
+
+\begin{equation}
+K_{DS}(t_k,\tau) \triangleq \left\{
+\begin{array}{lr}
+K_{F,\zeta}(t_k,\tau) & for \quad \tau \le t_k\\
+K_{B,\zeta}(t_k,\tau) & for \quad \tau > t_k
+\end{array}
+\right.
+\label{K}
+\end{equation}
+
+
+\begin{equation}\label{eqn:forward}
+\begin{split}
+	& K_{F,\zeta}(t,\tau)\\
+	&= \frac{1}{(t-a)^4+(b-t)^4}\bigg[\Big(16(\tau-a)^{3}-a_3(\tau-a)^{4}\Big)\\
+	&+(t-\tau)\Big(-72(\tau-a)^2 + 12a_3(\tau-a)^3 - a_2(\tau-a)^4\Big)\\
+	&+\frac{(t-\tau)^2}{2}\Big(96(\tau-a) - 36a_3(\tau-a)^2 + 8a_2(\tau-a)^3 -a_1(\tau-a)^4\Big)\\
+	&+\frac{(t-\tau)^3}{6}\Big(-24 + 24a_3(\tau-a) - 12a_2(\tau-a)^2 + 4a_1(\tau-a)^3 - a_0(\tau-a)^4\Big)\bigg]	
+\end{split}
+\end{equation}
+
+$$\mathbf{w}:=\begin{bmatrix}a_1& a_2& a_3&a_4\end{bmatrix}^{\intercal}$$
+
+$\tau -a$ and $t-\tau$ remain constant with respect to the position in the sliding window as time progresses
+
+
+\begin{table}
+\parbox{0.65\textwidth}{\caption{Time reductions using vectorization in different languages}\label{Tab:vect}}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+         & \multicolumn{3}{c|}{\textbf{Programming Language}}\\\cline{2-4} 
+\textbf{Time in milliseconds} &   \textbf{MATLAB}   &  \textbf{Python} &   \textbf{C++} \\ \hline
+\textbf{Conventional Method}  & 4.082 & 63.3709 & 0.02469    \\
+\textbf{Vectorization Method} & 0.553 & 0.0601  & 0.00174    \\
+\textbf{Order of Reduction}   & 7.381 & 1054.42 & 14.189     \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{equation}
+d_\phi \quad d_\theta \quad d_\psi
+\end{equation}
+
+Simulation Time in Window (seconds)
+
+$K_{DS}(\tau)$
+
+
+$y(t)$ 
+$d_\phi \quad  d_\theta \quad d_\psi \quad$ N-m
+
+
+\end{document}

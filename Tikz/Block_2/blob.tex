@@ -1,0 +1,59 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, decorations.markings}
+\usepackage{amsmath, amsthm, amsfonts, amssymb, amscd, siunitx}
+
+\begin{document}
+
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=3em, , align=center]
+\tikzstyle{big_arrow} = [decoration={markings,mark=at position 1 with {\arrow[scale=2,>=stealth]{>}}},postaction={decorate}]
+\tikzstyle{system} = [draw, fill=green!10, rectangle, rounded corners]
+\begin{tikzpicture}
+    % Non-Linear Disturbance Observer
+    \node [system] at (,0) (quad) {
+    	\begin{minipage}[t][5cm]{6.5cm}
+    		\textbf{Non-Linear Disturbance Observer}
+    		\begin{equation*}
+    			\begin{split}
+    				\dot{z}_p &= -L_pz_p - L_p[L_p\dot{p}+G+\frac{1}{m}U_p] \\
+    				\hat{d}_p&=z_p + L_p\dot{p}
+    			\end{split}
+    		\end{equation*}
+    		
+    		\begin{equation*}
+				\begin{split}
+				\label{eqn:NDO2}
+				\dot{z}_\Theta &= -L_\Theta z_\Theta - L_\Theta[L_\Theta						\dot{\Theta}+\Phi(\Theta,\dot{\Theta}) - U_\Theta] \\
+				\hat{d}_\Theta&=z_\Theta + L_\Theta\dot{\Theta}
+				\end{split}
+			\end{equation*}
+    	\end{minipage}
+    };
+    
+    \node [system] at (10,0) (quad) {
+    	\begin{minipage}[t][5cm]{6.5cm}
+    		\textbf{Super-Twisting Observer}
+    		\begin{equation*}
+    			\begin{split}
+    				\dot{z}_p &= -L_pz_p - L_p[L_p\dot{p}+G+\frac{1}{m}U_p] \\
+    				\hat{d}_p&=z_p + L_p\dot{p}
+    			\end{split}
+    		\end{equation*}
+    		
+    		\begin{equation*}
+				\begin{split}
+				\label{eqn:NDO2}
+				\dot{z}_\Theta &= -L_\Theta z_\Theta - L_\Theta[L_\Theta						\dot{\Theta}+\Phi(\Theta,\dot{\Theta}) - U_\Theta] \\
+				\hat{d}_\Theta&=z_\Theta + L_\Theta\dot{\Theta}
+				\end{split}
+			\end{equation*}
+    	\end{minipage}
+    };
+    	
+	
+   
+   \end{tikzpicture}
+
+\end{document}

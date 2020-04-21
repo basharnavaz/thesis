@@ -1,0 +1,31 @@
+\documentclass{standalone}
+
+\usepackage{tikz, calc}
+\usetikzlibrary{shapes,arrows, decorations.markings}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw[|-|,semithick] (0,0) -- (10,0);
+	\draw[|-,semithick] (5.3,0) -- (3.4,0);
+	\draw[|-,semithick] (8.7,0) -- (8.8,0);
+	\draw (0,-0.5) node {$a$};
+	\draw (10,-0.5) node {$b$};
+	\draw (5.3,-0.5) node {$\tau$};
+	\draw (8.7,-0.5) node {$t$};
+		
+	\draw (-2, 0) node {Values};
+	\draw[-,dashed] (-1,0.5) -- (-1,-4);
+	
+	\draw (-2,-1.5) node {$(\tau-a)|^{a}_{t}$};	
+	\draw (0,-1.5) node {$0$};	
+	\draw (1,-1.5) node {$T$};
+	\draw (2,-1.5) node {$2T$};
+	\draw (3,-1.5) node {$3T$};
+	\draw (8.7,-1.5) node {$(t-a)$};
+	
+	\draw (-2,-2.5) node {$(t-\tau)|^{a}_{t}$};	
+	\draw (0,-2.5) node {$(t-a)$};	
+	\draw (3,-2.5) node {$(t-a)-3T$};
+	\draw (8.7,-3) node {$0$};
+\end{tikzpicture}
+\end{document}

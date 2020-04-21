@@ -1,0 +1,25 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, decorations.markings}
+
+\begin{document}
+
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=3em, minimum width=6em, align=center, rounded corners]
+\tikzstyle{topic} = [draw, fill=blue!20, ellipse, 
+    minimum height=3em, minimum width=6em, align=center, rounded corners]
+\tikzstyle{big_arrow} = [decoration={markings,mark=at position 1 with {\arrow[scale=2,>=stealth]{>}}},postaction={decorate}]
+
+\begin{tikzpicture}
+    \node[block] at (0,0) (node1) {Node 1};
+    \node[block] at (10,0) (node2) {Node 2};
+    \node[topic] at (5,0) (topic) {Topic};
+    \node[draw, fill=green!20, diamond, align=center]
+    % Draw arrows
+    \draw[big_arrow] (node1) -- node [midway, above] {Publication}(topic);
+    \draw[big_arrow] (topic) -- node [midway, above] {Callback}(node2);
+    
+\end{tikzpicture}
+
+\end{document}

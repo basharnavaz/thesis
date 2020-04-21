@@ -1,0 +1,58 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, decorations.markings}
+
+\begin{document}
+
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=3em, , align=center]
+\tikzstyle{big_arrow} = [decoration={markings,mark=at position 1 with {\arrow[scale=2,>=stealth]{>}}},postaction={decorate}]
+\tikzstyle{system} = [draw, fill=green!10, rectangle, rounded corners]
+\begin{tikzpicture}
+    % Ground Computer Rectangle
+    \node [system, minimum width=26em] at (,11) (ground_station) {
+    	\begin{minipage}[t][4.3cm]{8cm}\textbf{Ground Station}
+    	\end{minipage}
+    };
+    
+    
+    % Quadcopter Rectangle
+    \node [system, minimum width=15em] at (1,3) (quad) {
+    	\begin{minipage}[b][5.5cm]{2cm}\textbf{Quadcopter}
+    	\end{minipage}
+    };
+    	
+	% Place all the blocks 
+	\node [block] at (,15) (kin) {Windows Xbox Kinect};
+    \node [block] at (,12) (ros) {ROS Enabled Computer};
+    \node [block] at (4,10) (gc) {qGroundControl};
+    \node [block] at (, 7.5) (wifi) {WiFi};
+    \node [block] at (, 1.5) (px4) {Flight Control Board\\ (PX4 3DR)};
+    \node [block] at (, 3.25) (uart) {UART Adapter};
+    \node [block] at (, 5) (odroid) {Companion Computer\\Odroid XU4};
+	
+	% Draw lines     
+    \draw [-] (ros) -- (4,12);
+    \draw [-] (4,12) -- (gc);
+    
+    \draw [-] (gc) -- node [midway] {MAVLink} (4,7.5);
+    
+    
+    \draw [-] (ros) -- (-2,12);
+    \draw [-] (-2,12) -- node [midway,] {MAVLink/UDP} (-2,7.5);
+	
+	% Draw arrows    
+    \draw [big_arrow] (4,7.5) --  (wifi);
+    \draw [big_arrow] (-2,7.5) -- (wifi);
+    \draw [big_arrow] (kin) -- node [above right,] {USB 3.0} (ros);
+    
+    % Draw arrows in Quadcopter subsystem
+	\draw [big_arrow] (wifi) -- (odroid);
+    \draw [big_arrow] (odroid) -- (uart);
+    \draw [big_arrow] (uart) -- (px4);
+    \draw [big_arrow] (kin) -- (ros);
+   
+   \end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,80 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, decorations.markings}
+
+\begin{document}
+
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=3em, minimum width=6em, align=center]
+\tikzstyle{block2} = [draw, fill=magenta!60, rectangle, 
+    minimum height=3em, minimum width=6em, align=center]
+\tikzstyle{big_arrow} = [decoration={markings,mark=at position 1 with {\arrow[scale=2,>=stealth]{>}}},postaction={decorate}]
+
+\begin{tikzpicture}
+    
+    \node [block] at (1,9) (desired_trajectory) {Desired Trajectory};
+    \node [block] at (4,6) (position_controller) {Position\\Controller};
+    \node [block, minimum height=20em] at (12,3) (quad) {Quadrotor\\Dynamic\\Model};
+    \node [block] at (12,9) (simulated_disturbances) {Simulated\\Disturbances};
+    \node [block2] at (7,3) (observer) {Observer};    
+    \node [block] at (4,0) (attitude_controller) {Attitude\\Controller};
+    \node [block] at (1,3) (desired_orientation) {Desired\\Orientation\\Calculation};
+    
+    % To and forth between Controllers and Quadcopter Model 
+    \coordinate (A) at (6.2,6.2);
+    \coordinate (B) at (6.6,5.8);
+    \coordinate (C) at (6.6,0.2);
+    \coordinate (D) at (6.2,-0.2);
+    \coordinate (E) at (4.3,3.3);
+    \coordinate (F) at (4.3,2.7);
+    \draw[big_arrow] (A) -- node [midway, above] {$U_1$} (A -| quad.west); 
+    \draw (position_controller.east|-A) -- (A);
+	\draw (B) -- node [midway, below] {$x$, $\dot{x}$, $y$, $\dot{y}$, $z$, $\dot{z}$} (B -| quad.west); 
+    \draw[big_arrow] (B) -- (position_controller.east|-B);    
+    \draw[big_arrow] (C) -- node [midway, above] {$U_2$, $U_3$, $U_4$} (C -| quad.west); 
+    \draw (position_controller.east|-C) -- (C);
+	\draw (D) -- node [midway, below] {$\phi$, $\dot{\phi}$, $\theta$, $\dot{\theta}$, $\psi$, $\dot{\psi}$} (D -| quad.west); 
+    \draw[big_arrow] (D) -- (position_controller.east |- D);
+    
+    % To the Observer 
+    \draw [big_arrow] (A) --  (A|-observer.north);
+	\draw [big_arrow] (B) --  (B|-observer.north);
+	\draw [big_arrow] (C) --  (C|-observer.south);
+	\draw [big_arrow] (D) --  (D|-observer.south);
+	
+    
+    
+    % Postion Controller to Desired Orientation and Observer
+    \draw [-] (position_controller) -- node [midway, left] {$u_x$, $u_y$} (4,3);
+    \draw [big_arrow] (4,3) -- (observer);
+    \draw [big_arrow] (4,3) -- (desired_orientation);
+    
+    % Desired Traj to Desired Orientation
+    \draw [big_arrow] (desired_trajectory) -- node [midway, left] {$p_d=[x_d,y_d,z_d,\psi]$} (desired_orientation);
+    % Desired Traj to Position Controller
+    \draw [-] (desired_trajectory) -- (4,9);
+    \draw [big_arrow] (4,9) -- node [midway, right] {$p_d$} (position_controller);
+    
+    % Desired Orientation Calculator to Attitude Controller
+    \draw [-] (desired_orientation) -- (1,0);
+    \draw [big_arrow] (1,0) -- node [midway, below] {$\phi_d$, $\theta_d$} (attitude_controller);
+    
+    % Observer to the PosCon and AttCon
+    \draw[big_arrow] (E) -- (position_controller.south-|E);
+	\draw (E) -- node [midway, above] {$\hat{d_p}$} (E -| observer.west);
+	\draw[big_arrow] (F) -- (attitude_controller.north-|F);
+	\draw (F) -- node [midway, below] {$\hat{d_\Theta}$} (F -| observer.west);
+	
+	% External disturbance arrow 
+	 \draw [big_arrow] (simulated_disturbances) -- node [midway, right] {$d$} (quad);
+	
+	% Dots at the connections
+    \filldraw[black] (4,3) circle (0.8pt) node[anchor=west] {};
+    \filldraw[black] (6.2,6.2) circle (0.8pt) node[anchor=west] {};
+    \filldraw[black] (6.6,5.8) circle (0.8pt) node[anchor=west] {};
+    \filldraw[black] (6.2,-0.2) circle (0.8pt) node[anchor=west] {};
+    \filldraw[black] (6.6,0.2) circle (0.8pt) node[anchor=west] {};
+    \end{tikzpicture}
+
+\end{document}

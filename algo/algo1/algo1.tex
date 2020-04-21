@@ -1,0 +1,51 @@
+\documentclass{standalone}
+
+\usepackage{graphicx}
+\usepackage{amsmath, amsthm, amsfonts, amssymb, amscd, siunitx}
+\usepackage{setspace, fancyhdr, float, xfrac, longtable, cite}
+\usepackage{wrapfig, lscape, rotating, epstopdf, url}
+\usepackage{array, booktabs, listings, latexsym}
+\usepackage{tikz, standalone, calc}
+\usetikzlibrary{shapes,arrows, decorations.markings}
+\usepackage{placeins, multirow}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+\let\oldnl\nl% Store \nl in \oldnl
+\newcommand{\nonl}{\renewcommand{\nl}{\let\nl\oldnl}}
+
+\begin{document}
+
+\begin{algorithm}[H] \label{algo:1}
+\SetAlgoLined
+\KwIn{$\mathbf{p_M}=[p_M(t_k-\delta) : p_{M}(t_k-\delta)]$, $\Theta_M[\Theta_M(t_k-\delta) : \Theta_M(t_k)]$}
+\KwOut{$\hat{d_p}(t_k)$, $\hat{d_\Theta}(t_k)$}
+%\KwResult{Write here the result }
+Set $\mathbf{w}_{1}^{0}= [1, 1, 1, 1]$, $k=1$ \\
+Obtain Full State Estimate \\
+\nonl \For{$\zeta\in[x,y,z,\phi,\theta,\psi]$}{
+\textbf{Parameter Estimate for Local Surrogate Model:} Compute $\mathbf{w}_{\zeta_k}$ 
+	\[
+		\hat{\mathbf{w}}_{\zeta_k}=\underset{\mathbf{w}_{\zeta_k}}{\text{argmin}} 	\big\{\gamma||\mathbf{w}_{\zeta_k}-\mathbf{\hat{w}}_{\zeta_{k-1}}||^{2}_{2} + \lambda||\mathbf{w}_{\zeta_k}||^{2}_{2} + ||\mathbf{\zeta}_M-\mathbf{\zeta}_{est}||^{2}_{2}\big\}
+	\]\\
+
+\textbf{State Estimation:} Compute state estimate $\hat{\zeta}(t_k)$ 
+	\[
+		\hat{\zeta}(t_k) = \frac{1}{((t_k)-(t_k-\delta))^4}\int_{t_k-\delta}^{t_k} K_{DS}(t_k,\tau)\zeta_M(\tau)\mathrm{d}\tau
+	\]
+
+\textbf{Higher Order Derivatives:} Compute the higher order derivatives $\hat{\dot{\zeta}}(t_k)$ and $\hat{\ddot{\zeta}}(t_k)$ using \eqref{eqn:A1}-\eqref{eqn:A6} in Section \ref{Sec:App1} of Appendix. 
+}
+Compute External Disturbances $\hat{d_p}(t_k)=[d_x,d_y,d_z]$ and $\hat{d_\Theta}(t_k)=[d_\phi,d_\theta,d_\psi]$: 
+	\[
+		\begin{aligned}
+    \hat{d_\phi}&=\hat{\ddot{\phi}}-(r_1\hat{\dot{\theta}}\hat{\dot{\psi}}-r_2\hat{\dot{\theta}}w+q_1U_2); &\hat{d_x}=\hat{\ddot{x}}-\Big((C_{\hat{\phi}}S_{\hat{\theta}}C_{\hat{\psi}}+S_{\hat{\phi}}S_{\hat{\psi}})\frac{1}{m}U_1\Big)\\
+    \hat{d_\theta}&=\hat{\ddot{\theta}}-(r_3\hat{\dot{\phi}}\hat{\dot{\psi}}+r_4\hat{\dot{\phi}}w+q_2U_3);  &\hat{d_y}=\hat{\ddot{y}}-\Big((C_{\hat{\phi}}S_{\hat{\theta}}S_{\hat{\psi}}-S_{\hat{\phi}}C_{\hat{\psi}})\frac{1}{m}U_1\Big)\\
+    \hat{d_\psi}&=\hat{\ddot{\psi}}-(r_5\hat{\dot{\theta}}\hat{\dot{\phi}}+q_3U_4); &\hat{d_z}=\hat{\ddot{z}}-\Big(-g+(C_{\hat{\phi}}C_{\hat{\theta}})\frac{1}{m}U_1\Big)
+    \end{aligned}
+	\]
+
+Set $k \gets k+1$ and go to Step 2.
+\caption{Kernel Disturbance Observer algorithm using dynamic regression for parameter estimation}
+\end{algorithm}
+
+\end{document}
